@@ -1,0 +1,51 @@
+.campaign-holder {
+    .table {
+        border: 1px solid #eaeaea;
+
+        thead {
+            th {
+                border-top: none;
+            }
+        }
+
+        tbody {
+            tr {
+                th {
+                    width: 20px;
+                }
+
+                td {
+                    max-width: 100px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+
+                    a {
+                        color: black !important;
+                    }
+                }
+
+                .icons {
+                    max-width: 35px;
+
+                    a {
+                        color: black;
+                    }
+
+                    button {
+                        padding: 0;
+                        border: none;
+                        background-color: transparent;
+                        cursor: pointer;
+                    }
+
+                    .fa-trash {
+                        &:hover {
+                            color: rgb(185, 29, 29);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
