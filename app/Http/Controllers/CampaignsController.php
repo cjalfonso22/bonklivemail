@@ -145,6 +145,7 @@ class CampaignsController extends Controller
         $report->sent = count($list);
         $report->received = $received;
         $report->user_id = $user_id;
+        $report->blocked = count(Mail::failures());
         $report->save();
 
         return redirect('/campaigns')
